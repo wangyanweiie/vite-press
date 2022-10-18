@@ -6,7 +6,7 @@ module.exports = {
     description: 'Just Do It',
     lang: 'zh-CN',
     // github pages 配置
-    base: '/myBlob/',
+    base: '/vitePress/',
     head: [
         // 添加图标
         ['link', { rel: 'icon', href: '/favicon.png' }]
