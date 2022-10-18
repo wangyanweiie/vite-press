@@ -1,16 +1,16 @@
 ---
 layout: home
 hero:
-  name: 笔记文档汇总
+  name: wyw
   text: ''
-  tagline: ''
+  tagline: 笔记文档汇总
   actions:
     - theme: brand
       text: 进入查看
       link: /guide/
     - theme: alt
       text: 代码仓库
-      link: https://gitee.com/wangyanweiie
+      link: https://github.com/wangyanweiie/vitePress
 features: 
   - icon: ⚡️ 
     title: Vite, The DX that can't be beat 

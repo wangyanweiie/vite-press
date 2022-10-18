@@ -19,7 +19,7 @@ export function getSideBarNote() {
             items: [
                 {
                     text:'Element+',
-                    link:'/note/01-Element+.md',
+                    link:'/note/01-Element.md',
                 },
                 {
                     text:'Uni-app',

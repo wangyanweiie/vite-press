@@ -1,6 +1,6 @@
 # 笔记
 
-- [Element+](.//01-Element%2B.md)  
+- [Element+](./01-Element.md)  
 - [Uni-app](./02-Uni-app.md)  
 - [VUE](./03-VUE.md)
 - [JavaScript](./04-JavaScript.md)  

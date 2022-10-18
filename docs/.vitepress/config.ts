@@ -5,6 +5,8 @@ module.exports = {
     title: 'wyw',
     description: 'Just Do It',
     lang: 'zh-CN',
+    // github pages 配置
+    base: '/myBlob/',
     head: [
         // 添加图标
         ['link', { rel: 'icon', href: '/favicon.png' }]
@@ -13,7 +15,7 @@ module.exports = {
         // logo
         logo: '/logo.png',
         // 网站标题
-        // siteTitle: false,
+        siteTitle: false,
         // 启动页面丝滑滚动
         smoothScroll: true,
         // 导航栏配置
