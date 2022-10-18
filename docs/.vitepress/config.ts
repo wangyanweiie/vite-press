@@ -20,7 +20,7 @@ module.exports = {
         nav: getNavBar(),
         // 社交账户链接
         socialLinks: [
-            { icon: 'github', link: 'https://github.com/wangyanweiie' },
+            { icon: 'github', link: 'https://github.com/wangyanweiie/vitePress' },
         ],
         // 左侧边栏配置
         sidebar: {
@@ -40,12 +40,12 @@ module.exports = {
         // 编辑链接
         editLink: {
             text: 'Edit this page on GitHub',
-            pattern: 'https://github.com/wangyanweiie'
+            pattern: 'https://github.com/wangyanweiie/vitePress'
         },
         // 页面底部
         footer: {
             message: '',
-            copyright: 'copyright © wangyanweiie'
+            copyright: 'copyright © wangyanwei'
         },
     }
 }
