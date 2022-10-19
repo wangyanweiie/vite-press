@@ -13,9 +13,9 @@ git init
 git add -A
 git commit -m 'deploy'
 
-# 如果发布到 https://<USERNAME>.github.io/<REPO>
-git remote add origin git@github.com:wangyanweiie/vitePress.git
-git branch -m main
+# 发布到 https://<USERNAME>.github.io/<REPO>
+# git remote add origin git@github.com:wangyanweiie/vitePress.git
+# git branch -m main
 git push -f git@github.com:wangyanweiie/vitePress.git main:gh-pages
 
 cd -

@@ -1,6 +1,16 @@
 import { getNavBar } from './nav'
-import { getSideBarGuide, getSideBarNote, getSideBarShare} from './sidebar'
+import { 
+    getSideBarGuide, // 指南
+    getSideBarNoteEditor, // 笔记 - 编辑器相关
+    getSideBarNoteFrame, // 笔记 - 前端框架相关
+    getSideBarNoteDeploy, // 笔记 - 项目部署相关
+    getSideBarNoteConfig, // 笔记 - 环境配置相关
+    getSideBarShare, // 交流分享
+} from './sidebar'
 
+/**
+ ******************** 配置信息 ********************
+ */
 module.exports = {
     title: 'wyw',
     description: 'Just Do It',
@@ -12,7 +22,7 @@ module.exports = {
         ['link', { rel: 'icon', href: '/favicon.png' }]
     ],
     themeConfig: {
-        // logo
+        // 网站 logo
         logo: '/logo.png',
         // 网站标题
         siteTitle: false,
@@ -27,7 +37,10 @@ module.exports = {
         // 左侧边栏配置
         sidebar: {
             '/guide/': getSideBarGuide(),
-            '/note/': getSideBarNote(),
+            '/note/editor/': getSideBarNoteEditor(),
+            '/note/frame/': getSideBarNoteFrame(),
+            '/note/deploy/': getSideBarNoteDeploy(),
+            '/note/config/': getSideBarNoteConfig(),
             '/share/': getSideBarShare()
         },
         // 右侧边栏标题
