@@ -54,7 +54,7 @@ export function getSideBarNoteDeploy() {
             text:'项目部署',
             collapsible: true,
             items: [
-                { text:'APP项目打包', link:'/note/deploy/APP打包.md' },
+                { text:'APP打包', link:'/note/deploy/APP项目打包.md' },
                 { text:'PC项目部署', link:'/note/deploy/PC项目部署.md' },
                 { text:'Verdaccio', link:'/note/deploy/Verdaccio.md' },
                 { text:'VitePress', link:'/note/deploy/VitePress.md' },
