@@ -20,7 +20,7 @@ export function getSideBarGuide() {
 export function getSideBarNoteEditor() {
     return [
         {
-            text:'编辑器',
+            text:'编辑器/IDE',
             collapsible: true,
             items: [
                 { text:'VSCode', link:'/note/editor/VSCode.md' },
@@ -29,11 +29,11 @@ export function getSideBarNoteEditor() {
     ]
 }
 
-// 前端框架相关笔记
+// 前端技术栈相关笔记
 export function getSideBarNoteFrame() {
     return [
         {
-            text:'前端框架',
+            text:'前端技术栈',
             collapsible: true,
             items: [
                 { text:'Element+', link:'/note/frame/Element.md' },
@@ -54,9 +54,10 @@ export function getSideBarNoteDeploy() {
             text:'项目部署',
             collapsible: true,
             items: [
-                { text:'APP打包', link:'/note/deploy/APP打包.md' },
+                { text:'APP项目打包', link:'/note/deploy/APP打包.md' },
                 { text:'PC项目部署', link:'/note/deploy/PC项目部署.md' },
-                { text:'Verdaccio部署', link:'/note/deploy/Verdaccio.md' },
+                { text:'Verdaccio', link:'/note/deploy/Verdaccio.md' },
+                { text:'VitePress', link:'/note/deploy/VitePress.md' },
             ],
         },
     ]

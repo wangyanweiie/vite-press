@@ -1,10 +1,10 @@
 import { getNavBar } from './nav'
 import { 
     getSideBarGuide, // 指南
-    getSideBarNoteEditor, // 笔记 - 编辑器相关
-    getSideBarNoteFrame, // 笔记 - 前端框架相关
-    getSideBarNoteDeploy, // 笔记 - 项目部署相关
-    getSideBarNoteConfig, // 笔记 - 环境配置相关
+    getSideBarNoteEditor, // 笔记 - 编辑器/IDE
+    getSideBarNoteFrame, // 笔记 - 前端技术栈
+    getSideBarNoteDeploy, // 笔记 - 项目部署
+    getSideBarNoteConfig, // 笔记 - 环境配置
     getSideBarShare, // 交流分享
 } from './sidebar'
 
@@ -12,7 +12,7 @@ import {
  ******************** 配置信息 ********************
  */
 module.exports = {
-    title: 'wyw',
+    title: 'Lemon',
     description: 'Just Do It',
     lang: 'zh-CN',
     // github pages 配置
@@ -25,15 +25,15 @@ module.exports = {
         // 网站 logo
         logo: '/logo.png',
         // 网站标题
-        siteTitle: false,
+        // siteTitle: false,
         // 启动页面丝滑滚动
         smoothScroll: true,
-        // 导航栏配置
-        nav: getNavBar(),
         // 社交账户链接
         socialLinks: [
             { icon: 'github', link: 'https://github.com/wangyanweiie/vitePress' },
         ],
+        // 导航栏配置
+        nav: getNavBar(),
         // 左侧边栏配置
         sidebar: {
             '/guide/': getSideBarGuide(),
@@ -60,7 +60,7 @@ module.exports = {
         // 页面底部
         footer: {
             message: '',
-            copyright: 'copyright © wangyanwei'
+            copyright: 'Copyright © 2022 wangyanwei'
         },
     }
 }
