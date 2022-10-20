@@ -42,6 +42,8 @@ export function getSideBarNoteFrame() {
                 { text:'JavaScript', link:'/note/frame/JavaScript.md' },
                 { text:'TypeScript', link:'/note/frame/TypeScript.md' },
                 { text:'GIT', link:'/note/frame/GIT.md' },
+                { text:'VitePress', link:'/note/deploy/VitePress.md' },
+                { text:'Verdaccio', link:'/note/deploy/Verdaccio.md' },
             ],
         },
     ]
@@ -56,8 +58,6 @@ export function getSideBarNoteDeploy() {
             items: [
                 { text:'APP打包', link:'/note/deploy/APP打包.md' },
                 { text:'PC项目部署', link:'/note/deploy/PC项目部署.md' },
-                { text:'Verdaccio', link:'/note/deploy/Verdaccio.md' },
-                { text:'VitePress', link:'/note/deploy/VitePress.md' },
             ],
         },
     ]

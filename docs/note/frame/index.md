@@ -6,3 +6,5 @@
 - [JavaScript](./JavaScript.md)  
 - [TypeScript](./TypeScript.md)  
 - [GIT](./GIT.md)
+- [VitePress](./VitePress.md)
+- [Verdaccio](./Verdaccio.md)
