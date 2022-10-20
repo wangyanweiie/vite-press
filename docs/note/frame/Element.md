@@ -1,4 +1,4 @@
-# Element-Plus
+# Element+
 
 ## 一、Element+
 
