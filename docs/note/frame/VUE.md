@@ -1,8 +1,22 @@
-# VUE_3
+# VUE
 
-## 一、组件通信 : `glinda`
+## 一、简介
 
-### 1. Props与Emit
+### 1. 什么是 VUE
+
+“渐进式 JavaScript 框架，易学易用，性能出色，适用场景丰富的 Web 前端框架”。  
+Vue (发音为 /vjuː/，类似 view) 是一款用于构建用户界面的 JavaScript 框架。它基于标准 HTML、CSS 和 JavaScript 构建，并提供了一套声明式的、组件化的编程模型，帮助你高效地开发用户界面。无论是简单还是复杂的界面，Vue 都可以胜任。
+
+### 2. 官网
+
+- [VUE2 官方文档](https://v2.cn.vuejs.org/)
+- [VUE3 官方文档](https://cn.vuejs.org/)
+
+## 二、部分应用
+
+### 1. 组件通信：`glinda`
+
+#### Props与Emit
 
 作用 : 用于父子组件通信 , 父组件通过`props`的方式向子组件传递数据，而通过`emit` 子组件可以向父组件发送自定义事件 ,  setup 语法糖默认不会对外部暴露任何内部声明的属性与方法 , 子组件可以通过 `defineExpose` 向外暴露属性与方法。
 
@@ -65,7 +79,7 @@
 </script>
 ```
 
-### 2. Provide 与 Inject
+#### Provide 与 Inject
 
 作用 : 用于父组件向子孙组件传递数据 , `provide`在父组件中返回要传给下级的数据，`inject`在需要使用这个数据的子辈组件或者孙辈等下级组件中注入数据。
 
@@ -86,17 +100,17 @@
 </script>
 ```
 
-## 二、全局事件总线 : `hr`
+### 2. 全局事件总线：`hr`
 
 - 安装 mitt
 
-```
+``` shell
 npm install mitt
 ```
 
 - 在工具文件夹中单独创建 `event-bus.ts` 文件
 
-```typescript
+``` typescript
 import mitt from 'mitt';
 const emitter = mitt();
 export default emitter;
@@ -104,7 +118,7 @@ export default emitter;
 
 - 在需要通信的文件中分别引入 `@/util/event-bus.ts`
 
-```typescript
+``` typescript
 import emitter from '@/util/event-bus.ts'
 
 // A组件发送自定义事件, params是携带的参数信息;
@@ -116,7 +130,7 @@ emitter.on('childFunction', msg => {
 });
 ```
 
-## 三、状态管理模式 : `vuex`
+### 3. 状态管理模式：`vuex`
 
 - 路径 : `store/index.ts`
 
@@ -159,7 +173,7 @@ createApp(App).use(store).mount("#app")
 </script>
 ```
 
-## 四、监听 : `watch`
+### 4. 监听：`watch`
 
 ```typescript
 // 监听单个数据源
@@ -176,7 +190,7 @@ watch(
 );
 ```
 
-## 五、路由跳转页面 : `yj`
+### 5. 路由跳转页面：`yj`
 
 - 路由配置路径 : `src/router/index.ts`
 

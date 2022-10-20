@@ -42,6 +42,11 @@ console.log(1 + '1');
 - TypeScript 还可以和 JavaScript 共存。  
 这意味着如果你有一个使用 JavaScript 开发的旧项目，又想使用 TypeScript 的特性，那么你不需要急着把整个项目都迁移到 TypeScript，你可以使用 TypeScript 编写新文件，然后在后续更迭中逐步迁移旧文件。
 
+### 3. 官网
+
+- [官网](https://www.typescriptlang.org/)
+- [中文网](https://www.tslang.cn/)
+
 ## 二、基础
 
 ### 1.数据类型
