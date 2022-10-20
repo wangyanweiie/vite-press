@@ -400,7 +400,7 @@ ssh deploy.sh
 
 ### 5. [站点地址](https://wangyanweiie.github.io/vitePress)
 
-## 六、参考文章
+## 五、参考文章
 
 - https://vitejs.cn/vitepress/
 - https://process1024.github.io/vitepress/
