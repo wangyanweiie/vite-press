@@ -306,7 +306,7 @@ export function getSideBarShare() {
 
 - 拷贝远程仓库的通过 SSH 进行 clone 的地址
 
-![SHH-Clone](/public/img/VitePress.assets/SHH-Clone.png)
+![ssh-clone](/public/img/VitePress.assets/ssh-clone.png)
 
 - 在项目根目录（vitepress）下创建 deploy.sh 文件
 
@@ -372,13 +372,13 @@ ssh -T git@github.com
 
 - 执行结果
 
-![SSH-Key](/public/img/VitePress.assets/SSH-Key.png)
+![ssh-key](/public/img/VitePress.assets/ssh-key.png)
 
 ### 3. 配置 GitHub
 
 - 粘贴生成的 SSH Key 到 github 配置
 
-![set-SSH-Key](/public/img/VitePress.assets/set-SSH-Key.png)
+![set-ssh-key](/public/img/VitePress.assets/set-ssh-key.png)
 
 ![set-success](/public/img/VitePress.assets/set-success.png)
 
@@ -400,76 +400,9 @@ ssh deploy.sh
 
 ### 5. [站点地址](https://wangyanweiie.github.io/vitePress)
 
-## 五、配置 Travis-CI
-
-Github 可搭配 Travis-CI 进行自动构建服务 [Travis-CI 官网](https://www.travis-ci.com) 
-
-### 1、操作流程
-
-> 在 Github 自己的仓库根目录里添加 .travis.yml 配置文件  
-> 打开 travis-ci 官网 `https://www.travis-ci.com`  
-> 点击 Sign-In，选择 SIGN IN WITH GITHUB
-> 使用 Github 账户进行登录  
-> 点击右上角头像 => Settings  
-> 点击左侧的 Sync account 按钮，同步自己的代码仓库  
-> 点击仓库右侧的设置按钮，配置所选代码仓库的 github-token  
-> 以后 Github 上该项目有提交，travis 就会进行自动构建服务
-
-### 2、YML 文件配置
-
-``` yaml
-# 语言
-language: node_js
-# 设置语言版本
-node_js: "16.17.0" 
-# 缓存依赖
-cache:
-  directories:
-    - node_modules
-# 安装依赖
-install:
-  - pnpm install
-# 执行打包
-script:
-  - pnpm docs:build
-# 部署
-deploy:
-  provider: pages
-  skip_cleanup: true
-  local_dir: docs/.vitepress/dist
-  # 在 GitHub 中生成，用于允许 Travis 向你的仓库推送代码。
-  # 在 Travis 的项目设置页面进行配置，github-token，使用自己设置的 Token 名称变量
-  github_token: $travis-Token
-  target-branch: gh-pages
-  on:
-    branch: main
-```
-
-### 3、GitHub 配置
-
-- 创建 GitHub-Token
-
-![github-token](/public/img/VitePress.assets/github-token.png)
-
-![github-token](/public/img/VitePress.assets/github-token-success.png)
-
-### 4、Travis-CI 配置
-
-- 同步代码仓库
-
-![travis-ci](/public/img/VitePress.assets/travis-ci.png)
-
-- 设置仓库的 GitHub-Token
-
-![travis-set](/public/img/VitePress.assets/travis-set.png)
-
-![travis-set-token](/public/img/VitePress.assets/travis-set-token.png)
-
 ## 六、参考文章
 
 - https://vitejs.cn/vitepress/
 - https://process1024.github.io/vitepress/
 - https://juejin.cn/post/6936843142293356558
 - https://blog.csdn.net/weixin_42310154/article/details/118340458
-- http://t.zoukankan.com/leyi-p-7851991.html
-- http://t.zoukankan.com/champyin-p-11621898.html

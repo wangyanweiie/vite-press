@@ -1,3 +1,5 @@
+# 配置 Travis-CI 使用，但现在 travis-ci 已不再提供免费服务；
+# ===================
 # 语言
 language: node_js
 # 设置语言版本
