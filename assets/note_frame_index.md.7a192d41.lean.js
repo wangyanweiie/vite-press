@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as t,a as i}from"./app.de10fbd5.js";const f=JSON.parse('{"title":"\u{1F596}","description":"","frontmatter":{},"headers":[],"relativePath":"note/frame/index.md"}'),r={name:"note/frame/index.md"},l=i("",2),n=[l];function c(h,o,s,_,d,p){return t(),a("div",null,n)}const T=e(r,[["render",c]]);export{f as __pageData,T as default};
