@@ -44,7 +44,7 @@ module.exports = {
             '/note/share/': getSideBarNoteShare(),
         },
         // 右侧边栏标题
-        outlineTitle: '目录',
+        // outlineTitle: 'Title',
         //上下篇文本提示文字
         docFooter: { 
             prev: '上一篇',
