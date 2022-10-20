@@ -402,9 +402,9 @@ ssh deploy.sh
 
 ## 五、配置 Travis-CI
 
-[travis 官网](https://www.travis-ci.com)
+Github 可搭配 Travis-CI 进行自动构建服务 [Travis-CI 官网](https://www.travis-ci.com) 
 
-- Github 搭配 Travis-CI 进行自动构建服务流程
+### 1、操作流程
 
 > 在 Github 自己的仓库根目录里添加 .travis.yml 配置文件  
 > 打开 travis-ci 官网 `https://www.travis-ci.com`  
@@ -415,13 +415,13 @@ ssh deploy.sh
 > 点击仓库右侧的设置按钮，配置所选代码仓库的 github-token  
 > 以后 Github 上该项目有提交，travis 就会进行自动构建服务
 
-- .travis.yml 文件配置
+### 2、YML 文件配置
 
 ``` yaml
 # 语言
 language: node_js
-node_js:
-  - lts/*
+# 设置语言版本
+node_js: "16.17.0" 
 # 缓存依赖
 cache:
   directories:
@@ -439,24 +439,27 @@ deploy:
   local_dir: docs/.vitepress/dist
   # 在 GitHub 中生成，用于允许 Travis 向你的仓库推送代码。
   # 在 Travis 的项目设置页面进行配置，github-token，使用自己设置的 Token 名称变量
-  github_token: ${travis-Token}
-  keep_history: true
-  # 指定提交触发的分支
+  github_token: $travis-Token
+  target-branch: gh-pages
   on:
     branch: main
 ```
 
-- 同步代码仓库结果
+### 3、GitHub 配置
 
-![travis-ci](/public/img/VitePress.assets/travis-ci.png)
-
-- 在 GitHub 上创建 GitHub-Token
+- 创建 GitHub-Token
 
 ![github-token](/public/img/VitePress.assets/github-token.png)
 
 ![github-token](/public/img/VitePress.assets/github-token-success.png)
 
-- 在 Travis 上配置仓库的 GitHub-Token
+### 4、Travis-CI 配置
+
+- 同步代码仓库
+
+![travis-ci](/public/img/VitePress.assets/travis-ci.png)
+
+- 设置仓库的 GitHub-Token
 
 ![travis-set](/public/img/VitePress.assets/travis-set.png)
 
