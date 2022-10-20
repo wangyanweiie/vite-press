@@ -6,9 +6,7 @@ export function getSideBarGuide() {
         {
             text:'指南',
             collapsible: true,
-            items: [
-                // { text: 'vitepress', link: '/guide/' },
-            ],
+            items: [],
         },
     ]
 }
@@ -55,10 +53,7 @@ export function getSideBarNoteDeploy() {
         {
             text:'项目部署',
             collapsible: true,
-            items: [
-                { text:'APP打包', link:'/note/deploy/APP打包.md' },
-                { text:'PC项目部署', link:'/note/deploy/PC项目部署.md' },
-            ],
+            items: [],
         },
     ]
 }
@@ -69,25 +64,38 @@ export function getSideBarNoteConfig() {
         {
             text:'环境配置',
             collapsible: true,
+            items: [],
+        },
+    ]
+}
+
+// 交流分享笔记
+export function getSideBarNoteShare() {
+    return [
+        {
+            text:'交流分享',
+            collapsible: true,
             items: [
-                { text:'Zebra蓝牙配置', link:'/note/config/Zebra蓝牙配置.md' },
+                { text: '事件循环', link: '/note/share/事件循环.md' },
+                { text: '文件上传', link: '/note/share/文件上传.md' },
+                { text: 'GitLab-CI', link: '/note/share/GitLab-CI.md' },
             ],
         },
     ]
 }
 
 /**
- ******************** 交流分享 ********************
+ ******************** 公司 ********************
  */
-export function getSideBarShare() {
+ export function getSideBarCompany() {
     return [
         {
             text:'交流分享',
             collapsible: true,
             items: [
-                { text: '事件循环', link: '/share/事件循环.md' },
-                { text: '文件上传', link: '/share/文件上传.md' },
-                { text: 'GitLab-CI', link: '/share/GitLab-CI.md' },
+                { text:'PC项目部署', link:'/company/PC项目部署.md' },
+                { text:'APP项目打包', link:'/company/APP项目打包.md' },
+                { text:'Zebra蓝牙配置', link:'/company/Zebra蓝牙配置.md' },
             ],
         },
     ]
