@@ -87,16 +87,16 @@ export function getSideBarNoteShare() {
 /**
  ******************** 公司 ********************
  */
- export function getSideBarCompany() {
-    return [
-        {
-            text:'交流分享',
-            collapsible: true,
-            items: [
-                { text:'PC项目部署', link:'/company/PC项目部署.md' },
-                { text:'APP项目打包', link:'/company/APP项目打包.md' },
-                { text:'Zebra蓝牙配置', link:'/company/Zebra蓝牙配置.md' },
-            ],
-        },
-    ]
-}
+//  export function getSideBarCompany() {
+//     return [
+//         {
+//             text:'交流分享',
+//             collapsible: true,
+//             items: [
+//                 { text:'PC项目部署', link:'/company/PC项目部署.md' },
+//                 { text:'APP项目打包', link:'/company/APP项目打包.md' },
+//                 { text:'Zebra蓝牙配置', link:'/company/Zebra蓝牙配置.md' },
+//             ],
+//         },
+//     ]
+// }

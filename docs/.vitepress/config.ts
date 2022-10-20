@@ -6,7 +6,6 @@ import {
     getSideBarNoteDeploy, // 笔记 - 项目部署
     getSideBarNoteConfig, // 笔记 - 环境配置
     getSideBarNoteShare, // 笔记 - 交流分享
-    getSideBarCompany, // 公司
 } from './sidebar'
 
 /**
@@ -43,7 +42,6 @@ module.exports = {
             '/note/deploy/': getSideBarNoteDeploy(),
             '/note/config/': getSideBarNoteConfig(),
             '/note/share/': getSideBarNoteShare(),
-            '/company/': getSideBarCompany(),
         },
         // 右侧边栏标题
         outlineTitle: '目录',

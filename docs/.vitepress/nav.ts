@@ -17,9 +17,5 @@ export function getNavBar() {
                 { text: '交流分享', link: '/note/share/' },
             ] 
         },
-        {
-            text: '公司', 
-            link: '/company/' 
-        },
 	]
 }
