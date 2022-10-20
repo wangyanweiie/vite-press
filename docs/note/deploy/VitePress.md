@@ -399,3 +399,51 @@ ssh deploy.sh
 ![github-pages](/public/img/VitePress.assets/github-pages.png)
 
 ### 5. [站点地址](https://wangyanweiie.github.io/vitePress)
+
+## 五、配置 Travis-CI
+
+[travis 官网](https://www.travis-ci.com)
+
+- Github 搭配 Travis-CI 进行自动构建服务流程
+
+> 在 Github 自己的仓库根目录里添加 .travis.yml 配置文件  
+> 打开 travis-ci 官网 `https://www.travis-ci.com`  
+> 点击 Sign-In，选择 SIGN IN WITH GITHUB
+> 使用 Github 账户进行登录  
+> 点击右上角头像 => Settings
+> 点击左侧的 Sync account 按钮，同步自己的代码仓库  
+> 以后 Github 上该项目有提交，travis 就会进行自动构建服务
+
+- .travis.yml 文件配置
+
+``` yaml
+language: node_js
+node_js:
+  - lts/*
+install:
+  - pnpm install
+script:
+  - pnpm docs:build
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: docs/.vitepress/dist
+  # 在 GitHub 中生成，用于允许 Travis 向你的仓库推送代码。
+  # 在 Travis 的项目设置页面进行配置，设置为 secure variable
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: gh-pages
+```
+
+- 执行结果
+
+![travis-ci](/public/img/VitePress.assets/travis-ci.png)
+
+## 六、参考文章
+
+- https://vitejs.cn/vitepress/
+- https://process1024.github.io/vitepress/
+- https://juejin.cn/post/6936843142293356558
+- https://blog.csdn.net/weixin_42310154/article/details/118340458
+- http://t.zoukankan.com/leyi-p-7851991.html
