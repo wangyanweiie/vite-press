@@ -378,9 +378,9 @@ ssh -T git@github.com
 
 - 粘贴生成的 SSH Key 到 github 配置
 
-![set-ssh-key](/public/img/VitePress.assets/set-ssh-key.png)
+![github-ssh-key](/public/img/VitePress.assets/github-ssh-key.png)
 
-![set-success](/public/img/VitePress.assets/set-success.png)
+![github-ssh-key-success](/public/img/VitePress.assets/github-ssh-key.png)
 
 ### 4. 执行 deploy.sh
 
