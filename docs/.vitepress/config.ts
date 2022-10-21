@@ -3,8 +3,7 @@ import {
     getSideBarGuide, // 指南
     getSideBarNoteEditor, // 笔记 - 编辑器/IDE
     getSideBarNoteFrame, // 笔记 - 前端技术栈
-    getSideBarNoteDeploy, // 笔记 - 项目部署
-    getSideBarNoteConfig, // 笔记 - 环境配置
+    getSideBarNoteDeploy, // 笔记 - 配置部署
     getSideBarNoteShare, // 笔记 - 交流分享
 } from './sidebar'
 
@@ -40,16 +39,15 @@ module.exports = {
             '/note/editor/': getSideBarNoteEditor(),
             '/note/frame/': getSideBarNoteFrame(),
             '/note/deploy/': getSideBarNoteDeploy(),
-            '/note/config/': getSideBarNoteConfig(),
             '/note/share/': getSideBarNoteShare(),
         },
         // 右侧边栏标题
-        // outlineTitle: 'Title',
-        //上下篇文本提示文字
+        outlineTitle: 'Title',
+        // 上下篇文本提示文字
         docFooter: { 
             prev: '上一篇',
             next: '下一篇'
-          },
+        },
         // 上次更新时间提示文字
         lastUpdatedText: 'Updated Date',
         // 编辑链接

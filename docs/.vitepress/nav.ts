@@ -12,8 +12,7 @@ export function getNavBar() {
             items: [
                 { text: '编辑器/IDE', link: '/note/editor/' },
                 { text: '前端技术栈', link: '/note/frame/' },
-                { text: '项目部署', link: '/note/deploy/' },
-                { text: '环境配置', link: '/note/config/' },
+                { text: '配置部署', link: '/note/deploy/' },
                 { text: '交流分享', link: '/note/share/' },
             ] 
         },

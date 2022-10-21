@@ -4,9 +4,9 @@
 
 ### 1. 什么是 VitePress
 
-“VitePress 是 VuePress 小兄弟, 基于 Vite 构建”。  
+由 Vite、Vue 驱动的静态网站生成器，简单、强大、高性能，满足您一直想要的现代 SSG 框架。
 
-*`注：`VuePress：`https://vuepress.vuejs.org/`*
+*`注：`VitePress 是 VuePress 小兄弟。*
 
 ### 2. 优点
 
@@ -16,7 +16,9 @@
 
 ### 3. 官网
 
-- [vitePress 中文网](https://vitejs.cn/vitepress)
+- [官方文档-英文](https://vitepress.vuejs.org/)
+- [官方文档-中文](https://process1024.github.io/vitepress/)
+- [中文网](https://vitejs.cn/vitepress)
 
 ## 二、准备环境
 
@@ -402,7 +404,7 @@ ssh deploy.sh
 
 ## 五、参考文章
 
-- https://vitejs.cn/vitepress/
-- https://process1024.github.io/vitepress/
-- https://juejin.cn/post/6936843142293356558
-- https://blog.csdn.net/weixin_42310154/article/details/118340458
+> https://vitejs.cn/vitepress/  
+> https://process1024.github.io/vitepress/  
+> https://juejin.cn/post/6936843142293356558  
+> https://blog.csdn.net/weixin_42310154/article/details/118340458

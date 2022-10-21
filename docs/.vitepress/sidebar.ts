@@ -37,34 +37,24 @@ export function getSideBarNoteFrame() {
                 { text:'Element+', link:'/note/frame/Element.md' },
                 { text:'Uni-app', link:'/note/frame/Uni-app.md' },
                 { text:'VUE', link:'/note/frame/VUE.md' },
+                { text:'GIT', link:'/note/frame/GIT.md' },
                 { text:'JavaScript', link:'/note/frame/JavaScript.md' },
                 { text:'TypeScript', link:'/note/frame/TypeScript.md' },
-                { text:'GIT', link:'/note/frame/GIT.md' },
-                { text:'VitePress', link:'/note/frame/VitePress.md' },
-                { text:'Verdaccio', link:'/note/frame/Verdaccio.md' },
             ],
         },
     ]
 }
 
-// 项目部署相关笔记
+// 配置部署相关笔记
 export function getSideBarNoteDeploy() {
     return [
         {
-            text:'项目部署',
+            text:'配置部署',
             collapsible: true,
-            items: [],
-        },
-    ]
-}
-
-// 环境配置相关笔记
-export function getSideBarNoteConfig() {
-    return [
-        {
-            text:'环境配置',
-            collapsible: true,
-            items: [],
+            items: [
+                { text: 'VitePress', link: '/note/deploy/VitePress.md' },
+                { text: 'Verdaccio', link: '/note/deploy/Verdaccio.md' },
+            ],
         },
     ]
 }
