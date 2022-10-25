@@ -382,7 +382,7 @@ ssh -T git@github.com
 
 ![github-ssh-key](/public/img/VitePress.assets/github-ssh-key.png)
 
-![github-ssh-key-success](/public/img/VitePress.assets/github-ssh-key.png)
+![github-ssh-key-success](/public/img/VitePress.assets/github-ssh-key-success.png)
 
 ### 4. 执行 deploy.sh
 

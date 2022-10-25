@@ -31,6 +31,12 @@ module.exports = {
         socialLinks: [
             { icon: 'github', link: 'https://github.com/wangyanweiie/vitePress' },
         ],
+        // 站内搜索 - 需要配置 algolia
+        // algolia: {
+        //     appId: '8J64VVRP8K',
+        //     apiKey: 'a18e2f4cc5665f6602c5631fd868adfd',
+        //     indexName: 'vitepress'
+        // },
         // 导航栏配置
         nav: getNavBar(),
         // 左侧边栏配置
