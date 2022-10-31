@@ -95,11 +95,11 @@ yarn global add pm2
 |------|-----|
 | pm2 ls | 查看进程 |
 | pm2 start [app.js] | 启动某个应用 |
-| pm2 stop [appName/ID] | 停止某个应用(进程名/ID) |
-| pm2 restart [app.js] | 重启某个应用 |
-| pm2 describe [appName] | 查看某个进程的具体情况 |
-| pm2 logs [appName/ID] | 查看应用日志(进程名/ID) |
-| pm2 delete [appName/ID] | 删除进程(进程名/ID) |
+| pm2 stop [name/id] | 停止某个应用(进程名/ID) |
+| pm2 restart [name/id] | 重启某个应用(进程名/ID) |
+| pm2 describe [name/id] | 查看某个进程的具体情况(进程名/ID) |
+| pm2 logs [name/id] | 查看应用日志(进程名/ID) |
+| pm2 delete [name/id] | 删除进程(进程名/ID) |
 | pm2 stop all | 停止所有应用 |
 | pm2 restart all | 重启所有应用 |
 | pm2 logs | 查看实时日志 |
@@ -279,9 +279,7 @@ npm install @its/log --save
 
 ![download](/public/img/Verdaccio.assets/download_package②.png)
 
-## 六、服务器操作
-
-## 七、参考文章
+## 六、参考文章
 
 > https://verdaccio.org/zh-cn/  
 > https://www.jianshu.com/p/a13dd18782cf  
