@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as t,a as r}from"./app.905fc4fb.js";const p=JSON.parse('{"title":"\u{1F596}","description":"","frontmatter":{},"headers":[],"relativePath":"note/share/index.md"}'),i={name:"note/share/index.md"},_=r("",2),n=[_];function o(s,c,d,l,h,f){return t(),a("div",null,n)}const u=e(i,[["render",o]]);export{p as __pageData,u as default};
