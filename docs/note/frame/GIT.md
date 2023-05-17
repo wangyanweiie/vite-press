@@ -1,37 +1,13 @@
 # GIT
 
-## 一、简介
+## 一、配置
 
-### 1. 什么是 Git
+### 1. 全局配置
 
-Git 是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。也是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。
+- git config --global user.name "wyw"
+- git config --global user.email "740484522@qq.com"
 
-### 2. 优点
-
-- 适合分布式开发，强调个体。
-- 公共服务器压力和数据量都不会太大
-- 速度快、灵活
-- 任意两个开发者之间可以很容易的解决冲突
-- 离线工作
-
-### 3. 官网
-
-- [官网](https://git-scm.com/)
-- [官方文档](https://git-scm.com/book/zh/v2/)
-
-## 二、基础
-
-### 1. 配置
-
-#### 全局配置
-
-``` shell
-# 设置用户名与邮箱地址
-git config --global user.name "wangyanweiie"
-git config --global user.email "740484522@qq.com"
-```
-
-#### 创建仓库
+### 2. 创建仓库
 
 | 命令 | 作用 |
 |------|------|
@@ -42,7 +18,7 @@ git config --global user.email "740484522@qq.com"
 | git remote add origin url | 连接到远程仓库地址 |
 | git push -u origin master | 推送到远程仓库 |
 
-#### 已有仓库?
+### 3. 已有仓库?
 
 | 命令 | 作用 |
 |------|------|
@@ -53,9 +29,9 @@ git config --global user.email "740484522@qq.com"
 | git remot |  |
 | git remote add origin `url` |  |
 
-### 2. 常用命令
+## 二、终端命令
 
-#### 保存提交代码
+### 1. 保存提交代码
 
 | 命令 | 作用 |
 |------|------|
@@ -73,7 +49,7 @@ git config --global user.email "740484522@qq.com"
 | git reset `version` --hard | 强制版本回退 |
 | git push | 直接推送到远程仓库 |
 
-#### Husky 钩子
+### 2. Husky 钩子
 
 | 命令 | 作用 |
 |------|------|
@@ -87,7 +63,7 @@ git config --global user.email "740484522@qq.com"
 | git commit -m 'refactor: ' | 代码重构（重构，在不影响代码内部行为、功能下的代码修改） |
 | git commit -m 'workflow: ' | 工作流相关文件修改 |
 
-#### 分支
+### 3. 分支
 
 | 命令 | 作用 |
 |------|------|
@@ -99,7 +75,7 @@ git config --global user.email "740484522@qq.com"
 | git merge `branchname` | 在本地将子分支合并到主分支 |
 | git push -u origin `branchname` | 将子分支推送到码云 |
 
-#### 标签
+### 4. 标签
 
 | 命令 | 作用 |
 |------|------|

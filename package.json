@@ -15,7 +15,9 @@
   "author": "wyw",
   "license": "MIT",
   "dependencies": {
-    "@types/node": "^18.11.0",
     "vitepress": "^1.0.0-alpha.20"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.11"
   }
 }
