@@ -7,8 +7,11 @@
 pnpm install
 
 # 运行
-pnpm docs:dev
+pnpm dev
 
 # 打包
-pnpm docs:build
+pnpm build
+
+# 运行静态包
+pnpm serve
 ```
