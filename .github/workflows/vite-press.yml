@@ -9,8 +9,7 @@ name: GitHub Actions Build and Deploy
 # on字段指定触发 workflow 的条件，整个流程在 master 分支发生 push 事件时触发
 on:
     push:
-        branches:
-            master
+        branches: ["main"]
 
 jobs:
     build-and-deploy:
@@ -19,11 +18,11 @@ jobs:
 
         steps:
         # 第一步是获取源码，使用的 action 是 actions/checkout
-            name: Checkout
+          - name: Checkout
             uses: actions/checkout@master
 
         # 第二步是构建和部署，使用的 action 是 JamesIves/github-pages-deploy-action
-            name: Build and Deploy
+          - name: Build and Deploy
             uses: JamesIves/github-pages-deploy-action@master
 
         # 第二步需要四个环境变量，分别为 GitHub 密钥、发布分支、构建成果所在目录、构建脚本
