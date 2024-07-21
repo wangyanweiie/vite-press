@@ -4,29 +4,38 @@
 # step（步骤）：每个 job 由多个 step 构成，一步步完成；
 # action （动作）：每个 step 可以依次执行一个或多个命令（action）；
 # ===================
-name: GitHub Actions Build and Deploy
+name: Deploy Jekyll with GitHub Pages dependencies preinstalled
 
-# on字段指定触发 workflow 的条件，整个流程在 master 分支发生 push 事件时触发
 on:
-    push:
-        branches: ["main"]
+  push:
+    branches: ["main"]
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
-    build-and-deploy:
-        # 运行在虚拟机环境 ubuntu-latest
-        runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
 
-        steps:
-        # 第一步是获取源码，使用的 action 是 actions/checkout
-          - name: Checkout
-            uses: actions/checkout@main
-
-        # 第二步是构建和部署，使用的 action 是 JamesIves/github-pages-deploy-action
-          - name: Build and Deploy
-            uses: JamesIves/github-pages-deploy-action@main
-
-        # 第二步需要四个环境变量，分别为 GitHub 密钥、发布分支、构建成果所在目录、构建脚本
-        env:
-            BRANCH: gh-pages
-            FOLDER: build
-            BUILD_SCRIPT: npm install && npm run build
+  deploy:
+    environment:
+      name: vite-press
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
